@@ -1,0 +1,1122 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>CSS 速查笔记 | 小周博客</title><meta name="keywords" content="css"><meta name="author" content="拾光丶"><meta name="copyright" content="拾光丶"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="CSS 速查笔记CSS 学习套路 找它，利用选择器，把对应标签选出来； 摆它：利用布局样式（标准流、浮动、定位等），把盒子摆在需要的位置； 标准流可以从上向下摆放块级盒子，从左向右摆放行内盒子； 浮动可以从左向右摆放多个块级盒子，盒子之间没有缝隙并且顶端对齐； 定位可以让盒子：摆放在另一个盒子中的任意位置（子绝父相）或者固定在屏幕中的某个位置。   改它：利用外观样式（字体、文本、背景等），修改盒">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 速查笔记">
+<meta property="og:url" content="https://lzlj.top/2020/11/10/dd956b0d095b/index.html">
+<meta property="og:site_name" content="小周博客">
+<meta property="og:description" content="CSS 速查笔记CSS 学习套路 找它，利用选择器，把对应标签选出来； 摆它：利用布局样式（标准流、浮动、定位等），把盒子摆在需要的位置； 标准流可以从上向下摆放块级盒子，从左向右摆放行内盒子； 浮动可以从左向右摆放多个块级盒子，盒子之间没有缝隙并且顶端对齐； 定位可以让盒子：摆放在另一个盒子中的任意位置（子绝父相）或者固定在屏幕中的某个位置。   改它：利用外观样式（字体、文本、背景等），修改盒">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.lzlj.top/lazyLoading/13.jpg">
+<meta property="article:published_time" content="2020-11-10T15:33:00.000Z">
+<meta property="article:modified_time" content="2023-01-10T08:56:05.504Z">
+<meta property="article:author" content="拾光丶">
+<meta property="article:tag" content="css">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.lzlj.top/lazyLoading/13.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://lzlj.top/2020/11/10/dd956b0d095b/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6defcb9cf21bfdc207b69b1567862a27";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 拾光丶","link":"链接: ","source":"来源: 小周博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'CSS 速查笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-10 16:56:05'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/css/function.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/blog/20210315/bbXKQMAfol8o.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.lzlj.top/lazyLoading/13.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小周博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CSS 速查笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-11-10T15:33:00.000Z" title="发表于 2020-11-10 23:33:00">2020-11-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-10T08:56:05.504Z" title="更新于 2023-01-10 16:56:05">2023-01-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/css/">css</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="CSS-速查笔记"><a href="#CSS-速查笔记" class="headerlink" title="CSS 速查笔记"></a>CSS 速查笔记</h1><h2 id="CSS-学习套路"><a href="#CSS-学习套路" class="headerlink" title="CSS 学习套路"></a>CSS 学习套路</h2><ol>
+<li><strong>找它</strong>，利用<strong>选择器</strong>，把对应标签选出来；</li>
+<li><strong>摆它</strong>：利用<strong>布局样式</strong>（标准流、浮动、定位等），把盒子摆在需要的位置；<ol>
+<li><strong>标准流</strong>可以<strong>从上向下</strong>摆放<strong>块级盒子</strong>，<strong>从左向右</strong>摆放<strong>行内盒子</strong>；</li>
+<li><strong>浮动</strong>可以<strong>从左向右</strong>摆放多个<strong>块级盒子</strong>，盒子之间<strong>没有缝隙</strong>并且<strong>顶端对齐</strong>；</li>
+<li><strong>定位</strong>可以让盒子：摆放在另一个盒子中的任意位置（<strong>子绝父相</strong>）或者<strong>固定</strong>在屏幕中的某个位置。</li>
+</ol>
+</li>
+<li><strong>改它</strong>：利用<strong>外观样式</strong>（字体、文本、背景等），修改盒子内容的显示效果。</li>
+</ol>
+<h2 id="一-三种引入-CSS-的方式"><a href="#一-三种引入-CSS-的方式" class="headerlink" title="一. 三种引入 CSS 的方式"></a>一. 三种引入 CSS 的方式</h2><table>
+<thead>
+<tr>
+<th>样式表</th>
+<th>优点</th>
+<th>缺点</th>
+<th>使用频率</th>
+<th>控制范围</th>
+<th>注意点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>行内</td>
+<td>书写方便，权重高</td>
+<td>结构样式混合</td>
+<td>低</td>
+<td>控制一个标签</td>
+<td>不需要 style 标签</td>
+</tr>
+<tr>
+<td>内部</td>
+<td>部分结构和样式分离</td>
+<td>没有彻底分离</td>
+<td>较多，授课和练习使用</td>
+<td>控制一个页面</td>
+<td>样式定义在 style 标签中</td>
+</tr>
+<tr>
+<td>外部</td>
+<td>完全结构和样式分离</td>
+<td>需要 <code>link</code> 引入</td>
+<td><strong>多</strong></td>
+<td>可以被多处复用</td>
+<td>样式定义在标签的 style 属性中</td>
+</tr>
+</tbody></table>
+<h2 id="二-选择器（找它）"><a href="#二-选择器（找它）" class="headerlink" title="二. 选择器（找它）"></a>二. 选择器（找它）</h2><h3 id="2-1-基础选择器"><a href="#2-1-基础选择器" class="headerlink" title="2.1 基础选择器"></a>2.1 基础选择器</h3><table>
+<thead>
+<tr>
+<th>基础选择器</th>
+<th>作用</th>
+<th>特点</th>
+<th>使用频率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>☆ 标签选择器</td>
+<td>选中相同标签</td>
+<td>统一设置相同标签的样式，没有差异化</td>
+<td>较多</td>
+</tr>
+<tr>
+<td>☆ 类选择器(<code>.</code>)</td>
+<td>按需选择标签</td>
+<td>根据需求选择</td>
+<td><strong>非常多</strong></td>
+</tr>
+<tr>
+<td>id 选择器(<code>#</code>)</td>
+<td>选中唯一标签</td>
+<td>仅针对唯一标签</td>
+<td>通常与 JavaScript 联用</td>
+</tr>
+<tr>
+<td>通配符选择器(<code>*</code>)</td>
+<td>选中所有标签</td>
+<td>选择的太多，有部分不需要</td>
+<td>有特定的应用场景</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-复合选择器"><a href="#2-2-复合选择器" class="headerlink" title="2.2 复合选择器"></a>2.2 复合选择器</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>作用</th>
+<th>频率</th>
+<th>用法示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>☆ 后代</td>
+<td>找后代</td>
+<td>较高</td>
+<td>使用<strong>空格</strong>分隔 <code>.nav a</code></td>
+</tr>
+<tr>
+<td>子代</td>
+<td>找亲儿子</td>
+<td>较少</td>
+<td>使用 <code>&gt;</code> 分隔 <code>.nav&gt;a</code></td>
+</tr>
+<tr>
+<td>兄弟</td>
+<td>找后面所有弟弟</td>
+<td>极少</td>
+<td>使用 <code>~</code> 分隔 <code>li ~ li</code></td>
+</tr>
+<tr>
+<td>临近兄弟</td>
+<td>找后面第一个弟弟</td>
+<td>极少</td>
+<td>使用 <code>+</code> 分隔 <code>li + li</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>☆ 并集</td>
+<td>找大伙</td>
+<td>较多</td>
+<td>使用 <code>,</code> 分隔 <code>.nav, .header</code></td>
+</tr>
+<tr>
+<td>交集</td>
+<td>多选一</td>
+<td>极少</td>
+<td><code>标签.类名</code></td>
+</tr>
+</tbody></table>
+<h3 id="2-3-伪类选择器"><a href="#2-3-伪类选择器" class="headerlink" title="2.3 伪类选择器"></a>2.3 伪类选择器</h3><blockquote>
+<p>关键词：<strong>状态</strong>。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>作用</th>
+<th>频率</th>
+<th>用法示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>☆ 鼠标伪类</td>
+<td>鼠标悬停</td>
+<td>较多</td>
+<td><code>选择器:hover</code></td>
+</tr>
+<tr>
+<td>☆ 链接伪类</td>
+<td>链接状态</td>
+<td>较多</td>
+<td><code>a:hover</code> <strong>LVHAo</strong></td>
+</tr>
+<tr>
+<td>☆ 结构伪类</td>
+<td>元素位置</td>
+<td>较多</td>
+<td><code>E:first-child</code><br><code>E:last-child</code><br><code>E:nth-child(n)</code><br><code>E:nth-last-child(n)</code></td>
+</tr>
+<tr>
+<td>focus</td>
+<td>表单状态</td>
+<td>较少</td>
+<td><code>input:focus</code></td>
+</tr>
+<tr>
+<td>属性伪类选择器</td>
+<td>选择带有某些属性的</td>
+<td>少</td>
+<td>E[att符号&#x3D;’’]  ^开头  $结尾  *包含</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>结构伪类选择器</p>
+<table>
+<thead>
+<tr>
+<th>选择符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>E:first-child</code></td>
+<td>匹配父元素中的第一个子元素 E</td>
+</tr>
+<tr>
+<td><code>E:last-child</code></td>
+<td>匹配父元素中的最后一个子元素 E</td>
+</tr>
+<tr>
+<td><code>E:nth-child(n)</code> ☆</td>
+<td><strong>从前向后</strong>匹配父元素中的一个或特定多个子元素 E</td>
+</tr>
+<tr>
+<td><code>E:nth-last-child(n)</code> ☆</td>
+<td><strong>从后向前</strong>匹配父元素中的一个或特定多个子元素 E</td>
+</tr>
+<tr>
+<td><code>E:first-of-type</code></td>
+<td>匹配类型 E 的第一个</td>
+</tr>
+<tr>
+<td><code>E:last-of-type</code></td>
+<td>匹配类型 E 的最后一个</td>
+</tr>
+<tr>
+<td><code>E:nth-of-type(n)</code></td>
+<td>匹配类型 E 的第 n 个</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>结构伪类常用公式</p>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>2n</code></td>
+<td>偶数</td>
+</tr>
+<tr>
+<td><code>2n + 1</code></td>
+<td>奇数</td>
+</tr>
+<tr>
+<td><code>5n</code> ☆</td>
+<td>5、10、15…</td>
+</tr>
+<tr>
+<td><code>n + 5</code></td>
+<td>从第 5 个开始（包含第 5 个）一直到最后</td>
+</tr>
+<tr>
+<td><code>-n + 5</code> ☆</td>
+<td>前 5 个（包含第 5 个）</td>
+</tr>
+<tr>
+<td>-n+5</td>
+<td>后5个   用 <code>E:nth-last-child(n)</code></td>
+</tr>
+</tbody></table>
+</li>
+<li><p>链接伪类选择器（<strong>LVHA</strong>o）</p>
+<table>
+<thead>
+<tr>
+<th>链接伪类选择器</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a:link</td>
+<td>选择所有未被访问的链接</td>
+</tr>
+<tr>
+<td>a:visited</td>
+<td>选择所有已经被访问的链接</td>
+</tr>
+<tr>
+<td>a:hover</td>
+<td>选择鼠标指针位于其上的链接</td>
+</tr>
+<tr>
+<td>a:active</td>
+<td>选择激活链接（鼠标按下未抬起的链接）</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="2-4-伪元素选择器"><a href="#2-4-伪元素选择器" class="headerlink" title="2.4 伪元素选择器"></a>2.4 伪元素选择器</h3><blockquote>
+<p>关键词：<strong>内容</strong>。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>作用</th>
+<th>频率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>::before</code></td>
+<td>在标签刚开始之后插入行内元素</td>
+<td>较多</td>
+</tr>
+<tr>
+<td><code>::after</code></td>
+<td>在标签要结束之前插入行内元素</td>
+<td>较多</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>提示：伪元素选择器必须要指定 <code>content</code> 属性。</p>
+</blockquote>
+<h3 id="2-5-属性选择器"><a href="#2-5-属性选择器" class="headerlink" title="2.5 属性选择器"></a>2.5 属性选择器</h3><table>
+<thead>
+<tr>
+<th>选择符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>E[att]</code></td>
+<td>选择具有 att 属性的 E 元素</td>
+</tr>
+<tr>
+<td><code>E[att=&quot;val&quot;]</code> ☆</td>
+<td>选择具有 att 属性且值等于 val 的 E 元素</td>
+</tr>
+<tr>
+<td><code>E[att^=&quot;val&quot;]</code></td>
+<td>选择具有 att 属性且值以 val 开头的 E 元素</td>
+</tr>
+<tr>
+<td><code>E[att$=&quot;val&quot;]</code></td>
+<td>选择具有 att 属性且值以 val 结尾的 E 元素</td>
+</tr>
+<tr>
+<td><code>E[att*=&quot;val&quot;]</code></td>
+<td>选择具有 att 属性且值包含 val 的 E 元素</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><code>^</code> 以 xxx 开头 &#x2F; <code>$</code> 以 xxx 结束 &#x2F; <code>*</code> 包含。</p>
+</blockquote>
+<h3 id="2-6-选择器的权重"><a href="#2-6-选择器的权重" class="headerlink" title="2.6 选择器的权重"></a>2.6 选择器的权重</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>继承或 <code>*</code></td>
+<td><code>0,0,0,0</code></td>
+</tr>
+<tr>
+<td>标签选择器 &#x2F; 伪元素</td>
+<td><code>0,0,0,1</code></td>
+</tr>
+<tr>
+<td>类选择器 &#x2F; 属性选择器 &#x2F; 伪类选择器</td>
+<td><code>0,0,1,0</code></td>
+</tr>
+<tr>
+<td>id 选择器</td>
+<td><code>0,1,0,0</code></td>
+</tr>
+<tr>
+<td>行内样式</td>
+<td><code>1,0,0,0</code></td>
+</tr>
+<tr>
+<td><code>!important</code></td>
+<td><code>∞</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>开发技巧：向上找层叠，向下找继承，巧用后代多用类，权重无需记。</p>
+</blockquote>
+<h2 id="三-显示模式"><a href="#三-显示模式" class="headerlink" title="三. 显示模式"></a>三. 显示模式</h2><h3 id="3-1-标准流"><a href="#3-1-标准流" class="headerlink" title="3.1 标准流"></a>3.1 标准流</h3><h4 id="3-1-1-显示模式"><a href="#3-1-1-显示模式" class="headerlink" title="3.1.1 显示模式"></a>3.1.1 显示模式</h4><table>
+<thead>
+<tr>
+<th>元素模式</th>
+<th>排列方式</th>
+<th>指定宽高</th>
+<th>包含</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>块级元素（<code>block</code>）</td>
+<td>一行一个，独占一行</td>
+<td>可以</td>
+<td>任何标签</td>
+</tr>
+<tr>
+<td>行内元素 （<code>inline</code>）</td>
+<td>1. 一行多个，内容撑开<br>2. 遇到边界会折行<br>3. 彼此之间可能有缝隙</td>
+<td>不可以</td>
+<td>文本或其他行内元素</td>
+</tr>
+<tr>
+<td>行内块元素 （<code>inline-block</code>）</td>
+<td>1. 一行多个，内容撑开<br>2. 遇到边界会折行<br>3. 彼此之间可能有缝隙</td>
+<td>可以</td>
+<td>任何标签</td>
+</tr>
+</tbody></table>
+<h5 id="显示模式转换"><a href="#显示模式转换" class="headerlink" title="显示模式转换"></a>显示模式转换</h5><ul>
+<li><code>display: block</code> 转换为块元素，并显示隐藏的元素；</li>
+<li><code>display: none</code> 隐藏元素，不保留原有位置 从单词就知道  none  就是没了 ；</li>
+<li><code>display: inline-block</code> 转换为行内块元素。</li>
+<li><code>Visibility: visible  </code>    元素可见性   可见的</li>
+<li><code>Visibility：hidden </code>       元素隐藏    不可见的  保留位置 从单词就知道  只是隐藏了而已 还要保留位置</li>
+</ul>
+<blockquote>
+<p>提示：<code>display</code> 转换显示模式的代码要写在第一行。</p>
+</blockquote>
+<h4 id="3-1-2-盒子模型"><a href="#3-1-2-盒子模型" class="headerlink" title="3.1.2 盒子模型"></a>3.1.2 盒子模型</h4><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>速记</th>
+<th>盒子大小</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>border</td>
+<td><code>bd</code> &#x2F; <code>bdt</code> &#x2F; <code>bdr</code> &#x2F; <code>bdb</code> &#x2F; <code>bdl</code></td>
+<td>影响</td>
+<td><code>solid</code> 实线 &#x2F; <code>dashed</code> 虚线 &#x2F; <code>dotted</code> 点线</td>
+</tr>
+<tr>
+<td>padding</td>
+<td><code>p</code> &#x2F; <code>pt</code> &#x2F; <code>pr</code> &#x2F; <code>pb</code> &#x2F; <code>pl</code></td>
+<td>影响</td>
+<td>上右下左，缺哪个对称补</td>
+</tr>
+<tr>
+<td>margin</td>
+<td><code>m</code> &#x2F; <code>mt</code> &#x2F; <code>mr</code> &#x2F; <code>mb</code> &#x2F; <code>ml</code></td>
+<td>不影响</td>
+<td>上右下左，缺哪个对称补</td>
+</tr>
+</tbody></table>
+<h4 id="3-1-3-盒子大小（box-sizing）"><a href="#3-1-3-盒子大小（box-sizing）" class="headerlink" title="3.1.3 盒子大小（box-sizing）"></a>3.1.3 盒子大小（box-sizing）</h4><ul>
+<li><code>content-box</code>：<code>盒子大小</code> &#x3D; <code>宽高</code> + <code>padding</code> + <code>border</code>（传统盒子模型）；</li>
+<li><code>border-box</code>：<code>宽高</code> &#x3D; <code>padding</code> + <code>border</code> + <code>内容区域大小</code>（CSS3 盒子模型）。</li>
+</ul>
+<h4 id="3-1-4-溢出处理（ov）"><a href="#3-1-4-溢出处理（ov）" class="headerlink" title="3.1.4 溢出处理（ov）"></a>3.1.4 溢出处理（ov）</h4><p><code>overflow</code> 属性指定了如果内容溢出一个元素的框（超过其指定高度及宽度）的处理方式，包括：</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>visible</td>
+<td>不剪切内容也不添加滚动条</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>不显示超过对象尺寸的内容，超出的部分隐藏掉</td>
+</tr>
+<tr>
+<td>scroll</td>
+<td>不管超出内容否，总是显示滚动条（macOS 下和 <code>auto</code> 等效）</td>
+</tr>
+<tr>
+<td>auto</td>
+<td>超出自动显示滚动条，不超出不显示滚动条</td>
+</tr>
+</tbody></table>
+<h4 id="3-1-5-显示和隐藏"><a href="#3-1-5-显示和隐藏" class="headerlink" title="3.1.5 显示和隐藏"></a>3.1.5 显示和隐藏</h4><table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>display: none;</code></td>
+<td>隐藏元素，不保留原有位置</td>
+</tr>
+<tr>
+<td><code>display：block;</code></td>
+<td>转换成块级元素，同时显示元素</td>
+</tr>
+<tr>
+<td><code>visibility: hidden;</code></td>
+<td>隐藏元素，保留原有位置</td>
+</tr>
+<tr>
+<td><code>visibility: visible;</code></td>
+<td>元素可见</td>
+</tr>
+</tbody></table>
+<h3 id="3-2-浮动（float）"><a href="#3-2-浮动（float）" class="headerlink" title="3.2 浮动（float）"></a>3.2 浮动（float）</h3><blockquote>
+<p>作用：让多个块级元素（不改变显示方式）水平排成一行。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>速记符</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>left</td>
+<td>fl</td>
+<td><strong>左浮动</strong>，元素从左向右依次排列</td>
+</tr>
+<tr>
+<td>right</td>
+<td>fl:r</td>
+<td><strong>右浮动</strong>，元素从右向左依次排列</td>
+</tr>
+</tbody></table>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ol>
+<li>脱离标准流（脱标）；</li>
+<li>一行显示并且顶端对齐（行内和行内块元素会按照文本对齐方式对齐）；</li>
+<li>具有行内块元素的特性（但是彼此之间没有间隙）；</li>
+<li>如果父盒子没有高度，同时所有子盒子都是浮动的，下方的盒子会钻上来，需要清除浮动。</li>
+</ol>
+<blockquote>
+<p>浮动最早是用于图文混排的，浮动的盒子不会压住下方的文字内容。</p>
+</blockquote>
+<h3 id="3-3-定位（子绝父相）"><a href="#3-3-定位（子绝父相）" class="headerlink" title="3.3 定位（子绝父相）"></a>3.3 定位（子绝父相）</h3><h4 id="3-3-1-定位模式-pos"><a href="#3-3-1-定位模式-pos" class="headerlink" title="3.3.1 定位模式(pos)"></a>3.3.1 定位模式(pos)</h4><table>
+<thead>
+<tr>
+<th>值</th>
+<th>语义</th>
+<th>脱标</th>
+<th>移动位置</th>
+<th>常用</th>
+<th>场景</th>
+<th>占不占<br>位置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>static</td>
+<td>静态定位</td>
+<td>否</td>
+<td>不移动</td>
+<td>几乎不用</td>
+<td>不定位</td>
+<td>占</td>
+</tr>
+<tr>
+<td>relative ☆</td>
+<td><strong>相对</strong>定位</td>
+<td>否</td>
+<td>相对自身</td>
+<td>常用</td>
+<td><strong>子绝父相</strong></td>
+<td>占</td>
+</tr>
+<tr>
+<td>absolute ☆</td>
+<td><strong>绝对</strong>定位</td>
+<td>是</td>
+<td>带定位的父级</td>
+<td>常用</td>
+<td><strong>子绝父相</strong></td>
+<td>不占</td>
+</tr>
+<tr>
+<td>fixed ☆</td>
+<td><strong>固定</strong>定位</td>
+<td>是</td>
+<td>浏览器可视区</td>
+<td>常用</td>
+<td>浏览器可视区</td>
+<td>不占</td>
+</tr>
+<tr>
+<td>sticky</td>
+<td><strong>粘性</strong>定位</td>
+<td>否</td>
+<td>浏览器可视区</td>
+<td>不常用</td>
+<td>浏览器可视区</td>
+<td>占</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>提示</strong>：子绝父相不是永远不变的，如果父元素不需要占有位置，<strong>子绝父绝</strong>也会遇到。</p>
+</blockquote>
+<h4 id="3-3-2-边偏移"><a href="#3-3-2-边偏移" class="headerlink" title="3.3.2 边偏移"></a>3.3.2 边偏移</h4><table>
+<thead>
+<tr>
+<th>边偏移属性</th>
+<th align="left">示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>top</code>(t)</td>
+<td align="left"><code>top: 80px</code></td>
+<td><strong>顶端</strong>偏移量，定义元素相对于其参照元素<strong>上边线的距离</strong>。</td>
+</tr>
+<tr>
+<td><code>bottom</code>(b)</td>
+<td align="left"><code>bottom: 80px</code></td>
+<td><strong>底部</strong>偏移量，定义元素相对于其参照元素<strong>下边线的距离</strong>。</td>
+</tr>
+<tr>
+<td><code>left</code>(l)</td>
+<td align="left"><code>left: 80px</code></td>
+<td><strong>左侧</strong>偏移量，定义元素相对于其参照元素<strong>左边线的距离</strong>。</td>
+</tr>
+<tr>
+<td><code>right</code>(r)</td>
+<td align="left"><code>right: 80px</code></td>
+<td><strong>右侧</strong>偏移量，定义元素相对于其参照元素<strong>右边线的距离</strong></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>标准流</strong>或<strong>浮动</strong>与这四个属性搭配使用无效。</p>
+</blockquote>
+<h4 id="3-3-3-叠放顺序（z-index）"><a href="#3-3-3-叠放顺序（z-index）" class="headerlink" title="3.3.3 叠放顺序（z-index）"></a>3.3.3 叠放顺序（z-index）</h4><ol>
+<li>数值是<strong>整数</strong>（没有单位），默认是 <code>auto</code>，数值越大，盒子越靠前；</li>
+<li>数值相同，按书写顺序显示，后书写的盒子显示在上方；</li>
+<li>只有定位的盒子在可以使用 <code>z-index</code> 属性。</li>
+</ol>
+<h2 id="四-样式（改它）"><a href="#四-样式（改它）" class="headerlink" title="四. 样式（改它）"></a>四. 样式（改它）</h2><h3 id="4-1-字体样式"><a href="#4-1-字体样式" class="headerlink" title="4.1 字体样式"></a>4.1 字体样式</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>速记</th>
+<th>含义</th>
+<th>注意事项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>font-family</td>
+<td>ff</td>
+<td>字体</td>
+<td>工作中按照团队约定即可</td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>fz</td>
+<td>字号</td>
+<td>单位通常是 <code>px</code>（像素），<strong>字号一定要有单位</strong></td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>fw</td>
+<td>字重</td>
+<td><code>700</code> 加粗 &#x2F; <code>400</code> 普通，<strong>数字字重不带单位</strong></td>
+</tr>
+<tr>
+<td>font-style</td>
+<td>fs &#x2F; fsn</td>
+<td>字体样式</td>
+<td><code>italic</code> 斜体 &#x2F; <code>normal</code> 正常，把 <code>em</code> 改成不倾斜</td>
+</tr>
+<tr>
+<td>font</td>
+<td>f</td>
+<td>连写</td>
+<td><code>font-size/line-height font-family</code>，工作中按照团队约定即可</td>
+</tr>
+</tbody></table>
+<h3 id="4-2-文本样式"><a href="#4-2-文本样式" class="headerlink" title="4.2 文本样式"></a>4.2 文本样式</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>速记</th>
+<th>含义</th>
+<th>注意事项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>color</td>
+<td>c</td>
+<td>颜色</td>
+<td><code>#f60</code> &#x2F; <code>rgba(0~255, 0~255, 0~255, 0~1)</code></td>
+</tr>
+<tr>
+<td>text-align</td>
+<td>tac</td>
+<td>水平对齐</td>
+<td><code>center</code> &#x2F; <code>left</code> &#x2F; <code>right</code></td>
+</tr>
+<tr>
+<td>text-decoration</td>
+<td>td &#x2F; tdu</td>
+<td>文本修饰</td>
+<td><code>text-decoration: none;</code> &#x2F; <code>text-decoration: underline;</code></td>
+</tr>
+<tr>
+<td>text-indent</td>
+<td>ti</td>
+<td>首行缩进</td>
+<td><code>text-indent: 2em;</code></td>
+</tr>
+<tr>
+<td>line-height</td>
+<td>lh</td>
+<td>行高</td>
+<td>行高等于盒子高度会垂直居中 &#x2F; <code>lh1</code> 去除上下间距，易于卡片布局</td>
+</tr>
+</tbody></table>
+<h3 id="4-3-背景样式"><a href="#4-3-背景样式" class="headerlink" title="4.3 背景样式"></a>4.3 背景样式</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>速记</th>
+<th>作用</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>background-color</td>
+<td>bgc</td>
+<td>颜色</td>
+<td>颜色 &#x2F; <code>#f60</code> &#x2F; <code>rgba(0~255, 0~255, 0~255, 0~1)</code> &#x2F; <code>transparent</code></td>
+</tr>
+<tr>
+<td>background-image</td>
+<td>bgi</td>
+<td>图像</td>
+<td><code>url(图片路径)</code></td>
+</tr>
+<tr>
+<td>background-repeat</td>
+<td>bgr</td>
+<td>平铺</td>
+<td><code>repeat</code> &#x2F; <code>no-repeat</code> &#x2F; <code>repeat-x</code> &#x2F; <code>repeat-y</code></td>
+</tr>
+<tr>
+<td>background-position</td>
+<td>bgp</td>
+<td>位置</td>
+<td><code>x</code>, <code>y</code> &#x2F; <code>left right center</code> <code>top bottom center</code></td>
+</tr>
+<tr>
+<td>background-size</td>
+<td>bgs</td>
+<td>尺寸</td>
+<td><code>x</code>, <code>y</code> &#x2F; <code>contain</code> 图片完整 &#x2F; <code>cover</code> 铺满盒子</td>
+</tr>
+<tr>
+<td>background-attachment</td>
+<td>bga</td>
+<td>附着方式</td>
+<td><code>scroll</code> &#x2F; <code>fixed</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>复合写法推荐顺序：<code>background: color image repeat position/size</code>。</p>
+</blockquote>
+<h3 id="4-4-边框和阴影"><a href="#4-4-边框和阴影" class="headerlink" title="4.4 边框和阴影"></a>4.4 边框和阴影</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>速记</th>
+<th>作用</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>border-radius</td>
+<td>bdrs</td>
+<td>圆角边框</td>
+<td>圆形：<code>border-radius: 50%;</code> <br>圆角矩形：<code>border-radius: 高度的一半;</code><br>单独设置：左上角开始，顺时针方向设置</td>
+</tr>
+<tr>
+<td>box-shadow</td>
+<td>bxsh</td>
+<td>盒子阴影</td>
+<td>X 偏移 Y 偏移 阴影模糊半径 颜色<br><code>box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);</code><br><code>transform: translate(0, -1px);</code></td>
+</tr>
+<tr>
+<td>text-shadow</td>
+<td></td>
+<td>文字阴影</td>
+<td>X 偏移 Y 偏移 阴影模糊半径 颜色<br><code>text-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);</code></td>
+</tr>
+</tbody></table>
+<p>常用代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">15px</span> <span class="number">30px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.4</span>);</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">0</span>, -<span class="number">1px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-5-其他"><a href="#4-5-其他" class="headerlink" title="4.5 其他"></a>4.5 其他</h3><table>
+<thead>
+<tr>
+<th>属性及值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>list-style: none;</td>
+<td>取消显示列表默认列表样式</td>
+</tr>
+<tr>
+<td>cursor: pointer;</td>
+<td>鼠标样式，提示用户可以点击<br><code>text</code> 可以输入内容 &#x2F; <code>not-allowed</code> 禁止 &#x2F; <code>move</code> 移动</td>
+</tr>
+<tr>
+<td>outline: none;</td>
+<td>取消表单轮廓</td>
+</tr>
+<tr>
+<td>resize: none;</td>
+<td>防止拖拽文本域</td>
+</tr>
+<tr>
+<td>vertical-align: top &#x2F; middle &#x2F; bottom</td>
+<td>设置图片或者表单(行内块元素）和文字垂直对齐 &#x2F; 图片底侧空白缝隙</td>
+</tr>
+<tr>
+<td>transition: 要过渡的属性 动画时间 运动曲线 何时开始;</td>
+<td>谁做过渡给谁加，常用 <code>transition 0.3s</code></td>
+</tr>
+<tr>
+<td>filter: blur(5px)</td>
+<td>数值越大越模糊，数值为 0 最清晰（不做模糊处理）</td>
+</tr>
+<tr>
+<td>filter: grayscale(100%)</td>
+<td>可以让整个网站灰度显示，清明节常用</td>
+</tr>
+<tr>
+<td>width: calc(100% - 80px);</td>
+<td>让子盒子永远比父盒子的宽度小 80px (注意: 运算符前后必须有空格)</td>
+</tr>
+</tbody></table>
+<h2 id="五-布局技巧（方案）"><a href="#五-布局技巧（方案）" class="headerlink" title="五. 布局技巧（方案）"></a>五. 布局技巧（方案）</h2><h3 id="5-1-居中"><a href="#5-1-居中" class="headerlink" title="5.1 居中"></a>5.1 居中</h3><ol>
+<li><p>文本水平居中：在父盒子中设置 <code>tac</code>；</p>
+</li>
+<li><p>块级元素水平居中：<code>margin: 0 auto</code>；</p>
+</li>
+<li><p>绝对定位元素水平垂直居中：</p>
+<ol>
+<li><code>pos:a+t0+r0+b0+l0+m:a</code>；</li>
+<li><code>pos:a+t50%+l50%+trf:t</code> &#x2F; <code>-50%, -50%</code>。</li>
+</ol>
+</li>
+<li><p>文本垂直居中：</p>
+<ol>
+<li><p>单行文本垂直居中：<code>lh</code> 等于父盒子高度；</p>
+</li>
+<li><p>多行文本垂直居中：</p>
+<ol>
+<li>父盒子：行高等于父盒子高度；</li>
+<li>子盒子：<code>dib+lh1.2+va</code> &#x2F; <code>middle</code>。</li>
+</ol>
+<blockquote>
+<p>原理：将多行文本转换成行内块元素，可以在父盒子中指定行高实现垂直居中。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="5-2-行内块元素"><a href="#5-2-行内块元素" class="headerlink" title="5.2 行内块元素"></a>5.2 行内块元素</h3><ul>
+<li>元素之间的间隙：父盒子字体设置为 <code>0</code> &#x2F; 子盒子单独设置字体；</li>
+<li>图片底侧空白缝隙：<code>vertical-align: top / middle / bottom</code>；</li>
+<li>图片或者表单(行内块元素）和文字垂直对齐：<code>vertical-align: top / middle / bottom</code>。</li>
+</ul>
+<h3 id="5-3-清除浮动"><a href="#5-3-清除浮动" class="headerlink" title="5.3 清除浮动"></a>5.3 清除浮动</h3><ol>
+<li><p><code>::after</code> 伪元素法：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot; &quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">  <span class="attribute">visibility</span>: hidden;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>双伪元素法：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::before</span>,</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>: table;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="5-4-文字溢出显示省略号"><a href="#5-4-文字溢出显示省略号" class="headerlink" title="5.4 文字溢出显示省略号"></a>5.4 文字溢出显示省略号</h3><ol>
+<li><p>单行文本溢出</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 1. 强制在一行显示文本，默认 normal 会自动换行 */</span></span><br><span class="line"><span class="attribute">white-space</span>: nowrap;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*2 . 超出的部分隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 3. 文字用省略号替代超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多行文本溢出</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 1. 超出的部分隐藏 */</span></span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 2. 文字用省略号替代超出的部分 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 3. 弹性伸缩盒子模型显示 */</span></span><br><span class="line"><span class="attribute">display</span>: -webkit-box;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 4. 限制在一个块元素显示的文本的行数 */</span></span><br><span class="line">-webkit-line-clamp: <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 5. 设置或检索伸缩盒对象的子元素的排列方式 */</span></span><br><span class="line">-webkit-box-orient: vertical;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="5-5-外边距合并（折叠）处理"><a href="#5-5-外边距合并（折叠）处理" class="headerlink" title="5.5 外边距合并（折叠）处理"></a>5.5 外边距合并（折叠）处理</h3><ul>
+<li>兄弟盒子只设置一个；</li>
+<li>父子盒子：<ul>
+<li>在<strong>父盒子</strong>上设置 <code>overflow: hidden;</code>；</li>
+<li>给<strong>父盒子</strong>设置 <code>padding-top</code>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-6-细线边框"><a href="#5-6-细线边框" class="headerlink" title="5.6 细线边框"></a>5.6 细线边框</h3><h4 id="5-6-1-表格细线边框"><a href="#5-6-1-表格细线边框" class="headerlink" title="5.6.1 表格细线边框"></a>5.6.1 表格细线边框</h4><ul>
+<li><code>border-collapse: collapse; (bdcl)</code> 可以把相邻的边框合并到一起；</li>
+<li><code>border-collapse</code> 仅适用于表格。</li>
+</ul>
+<h4 id="5-6-2-块级元素细线边框"><a href="#5-6-2-块级元素细线边框" class="headerlink" title="5.6.2 块级元素细线边框"></a>5.6.2 块级元素细线边框</h4><ul>
+<li><code>margin</code> 值边框宽度(采用负值)或者使用结构伪类选择器<code>E:nth-last-child(n)</code>。</li>
+<li><code>hover</code> 处理：<ul>
+<li>无定位：<code>pos</code>；</li>
+<li>有定位：<code>z-index: 1</code>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-7-CSS-三角形"><a href="#5-7-CSS-三角形" class="headerlink" title="5.7 CSS 三角形"></a>5.7 CSS 三角形</h3><blockquote>
+<p>原理：边框连接处是斜边连接的。</p>
+</blockquote>
+<h4 id="5-7-1-等边三角形"><a href="#5-7-1-等边三角形" class="headerlink" title="5.7.1 等边三角形"></a>5.7.1 等边三角形</h4><ol>
+<li><code>w0+h0</code>；</li>
+<li><code>bd</code> &#x2F; <code>100px solid transparent;</code>；</li>
+<li>需要哪个方向的三角形，就设置哪个方向的颜色。<code>border-top-color: pink;</code></li>
+</ol>
+<h4 id="5-7-2-直角三角形"><a href="#5-7-2-直角三角形" class="headerlink" title="5.7.2 直角三角形"></a>5.7.2 直角三角形</h4><ol>
+<li><code>w0+h0</code>；</li>
+<li><code>bdt</code> &#x2F; <code>200px solid transparent;</code>；</li>
+<li><code>bdr</code> &#x2F; <code>100px solid red;</code>。</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://lzlj.top">拾光丶</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://lzlj.top/2020/11/10/dd956b0d095b/">https://lzlj.top/2020/11/10/dd956b0d095b/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://lzlj.top" target="_blank">小周博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/css/">css</a></div><div class="post_share"><div class="social-share" data-image="https://images.lzlj.top/lazyLoading/13.jpg" data-sites="qq,wechat,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://images.lzlj.top/rewardQrCode/weixin.jpeg" target="_blank"><img class="post-qr-code-img" src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/rewardQrCode/weixin.jpeg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://images.lzlj.top/rewardQrCode/alipay.jpeg" target="_blank"><img class="post-qr-code-img" src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/rewardQrCode/alipay.jpeg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/11/15/6b0c33f3efc7/"><img class="prev-cover" src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/lazyLoading/6.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">vue 跨域配置webpack</div></div></a></div><div class="next-post pull-right"><a href="/2020/11/01/326406ec8c98/"><img class="next-cover" src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/lazyLoading/13.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">css三角 scc丝带</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/11/01/326406ec8c98/" title="css三角 scc丝带"><img class="cover" src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/lazyLoading/13.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-11-01</div><div class="title">css三角 scc丝带</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/blog/20210315/bbXKQMAfol8o.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">拾光丶</div><div class="author-info__description">念念不忘，必有回响。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zhouchunlei1225" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zhouchunlei1225@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">加油吧！ 2023</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS-%E9%80%9F%E6%9F%A5%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">CSS 速查笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-%E5%AD%A6%E4%B9%A0%E5%A5%97%E8%B7%AF"><span class="toc-number">1.1.</span> <span class="toc-text">CSS 学习套路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E4%B8%89%E7%A7%8D%E5%BC%95%E5%85%A5-CSS-%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">一. 三种引入 CSS 的方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%88%E6%89%BE%E5%AE%83%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">二. 选择器（找它）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.3.1.</span> <span class="toc-text">2.1 基础选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.2 复合选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.3.3.</span> <span class="toc-text">2.3 伪类选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E4%BC%AA%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.3.4.</span> <span class="toc-text">2.4 伪元素选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.3.5.</span> <span class="toc-text">2.5 属性选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E6%9D%83%E9%87%8D"><span class="toc-number">1.3.6.</span> <span class="toc-text">2.6 选择器的权重</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.4.</span> <span class="toc-text">三. 显示模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E6%A0%87%E5%87%86%E6%B5%81"><span class="toc-number">1.4.1.</span> <span class="toc-text">3.1 标准流</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">3.1.1 显示模式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.4.1.1.1.</span> <span class="toc-text">显示模式转换</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">3.1.2 盒子模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-3-%E7%9B%92%E5%AD%90%E5%A4%A7%E5%B0%8F%EF%BC%88box-sizing%EF%BC%89"><span class="toc-number">1.4.1.3.</span> <span class="toc-text">3.1.3 盒子大小（box-sizing）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-4-%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86%EF%BC%88ov%EF%BC%89"><span class="toc-number">1.4.1.4.</span> <span class="toc-text">3.1.4 溢出处理（ov）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-5-%E6%98%BE%E7%A4%BA%E5%92%8C%E9%9A%90%E8%97%8F"><span class="toc-number">1.4.1.5.</span> <span class="toc-text">3.1.5 显示和隐藏</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%B5%AE%E5%8A%A8%EF%BC%88float%EF%BC%89"><span class="toc-number">1.4.2.</span> <span class="toc-text">3.2 浮动（float）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E5%AE%9A%E4%BD%8D%EF%BC%88%E5%AD%90%E7%BB%9D%E7%88%B6%E7%9B%B8%EF%BC%89"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.3 定位（子绝父相）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-%E5%AE%9A%E4%BD%8D%E6%A8%A1%E5%BC%8F-pos"><span class="toc-number">1.4.3.1.</span> <span class="toc-text">3.3.1 定位模式(pos)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-%E8%BE%B9%E5%81%8F%E7%A7%BB"><span class="toc-number">1.4.3.2.</span> <span class="toc-text">3.3.2 边偏移</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-3-%E5%8F%A0%E6%94%BE%E9%A1%BA%E5%BA%8F%EF%BC%88z-index%EF%BC%89"><span class="toc-number">1.4.3.3.</span> <span class="toc-text">3.3.3 叠放顺序（z-index）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-%E6%A0%B7%E5%BC%8F%EF%BC%88%E6%94%B9%E5%AE%83%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">四. 样式（改它）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.5.1.</span> <span class="toc-text">4.1 字体样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.5.2.</span> <span class="toc-text">4.2 文本样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E8%83%8C%E6%99%AF%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.5.3.</span> <span class="toc-text">4.3 背景样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E8%BE%B9%E6%A1%86%E5%92%8C%E9%98%B4%E5%BD%B1"><span class="toc-number">1.5.4.</span> <span class="toc-text">4.4 边框和阴影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-%E5%85%B6%E4%BB%96"><span class="toc-number">1.5.5.</span> <span class="toc-text">4.5 其他</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7%EF%BC%88%E6%96%B9%E6%A1%88%EF%BC%89"><span class="toc-number">1.6.</span> <span class="toc-text">五. 布局技巧（方案）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E5%B1%85%E4%B8%AD"><span class="toc-number">1.6.1.</span> <span class="toc-text">5.1 居中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E8%A1%8C%E5%86%85%E5%9D%97%E5%85%83%E7%B4%A0"><span class="toc-number">1.6.2.</span> <span class="toc-text">5.2 行内块元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8"><span class="toc-number">1.6.3.</span> <span class="toc-text">5.3 清除浮动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-%E6%96%87%E5%AD%97%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7"><span class="toc-number">1.6.4.</span> <span class="toc-text">5.4 文字溢出显示省略号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-%E5%A4%96%E8%BE%B9%E8%B7%9D%E5%90%88%E5%B9%B6%EF%BC%88%E6%8A%98%E5%8F%A0%EF%BC%89%E5%A4%84%E7%90%86"><span class="toc-number">1.6.5.</span> <span class="toc-text">5.5 外边距合并（折叠）处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-6-%E7%BB%86%E7%BA%BF%E8%BE%B9%E6%A1%86"><span class="toc-number">1.6.6.</span> <span class="toc-text">5.6 细线边框</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-6-1-%E8%A1%A8%E6%A0%BC%E7%BB%86%E7%BA%BF%E8%BE%B9%E6%A1%86"><span class="toc-number">1.6.6.1.</span> <span class="toc-text">5.6.1 表格细线边框</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-6-2-%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E7%BB%86%E7%BA%BF%E8%BE%B9%E6%A1%86"><span class="toc-number">1.6.6.2.</span> <span class="toc-text">5.6.2 块级元素细线边框</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-7-CSS-%E4%B8%89%E8%A7%92%E5%BD%A2"><span class="toc-number">1.6.7.</span> <span class="toc-text">5.7 CSS 三角形</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-7-1-%E7%AD%89%E8%BE%B9%E4%B8%89%E8%A7%92%E5%BD%A2"><span class="toc-number">1.6.7.1.</span> <span class="toc-text">5.7.1 等边三角形</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-7-2-%E7%9B%B4%E8%A7%92%E4%B8%89%E8%A7%92%E5%BD%A2"><span class="toc-number">1.6.7.2.</span> <span class="toc-text">5.7.2 直角三角形</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/11/08/6d0fd8863ea6/" title="初学vue3"><img src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/lazyLoading/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="初学vue3"/></a><div class="content"><a class="title" href="/2021/11/08/6d0fd8863ea6/" title="初学vue3">初学vue3</a><time datetime="2021-11-08T12:13:00.000Z" title="发表于 2021-11-08 20:13:00">2021-11-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/11/17f1013a8a20/" title="vue修饰符"><img src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/lazyLoading/4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue修饰符"/></a><div class="content"><a class="title" href="/2021/10/11/17f1013a8a20/" title="vue修饰符">vue修饰符</a><time datetime="2021-10-11T13:26:00.000Z" title="发表于 2021-10-11 21:26:00">2021-10-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/10/5338c3c69e5b/" title="节流和防抖"><img src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/lazyLoading/3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="节流和防抖"/></a><div class="content"><a class="title" href="/2021/10/10/5338c3c69e5b/" title="节流和防抖">节流和防抖</a><time datetime="2021-10-10T13:13:00.000Z" title="发表于 2021-10-10 21:13:00">2021-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/09/0f2ed4f13cc4/" title="通过component标签加上is属性动态切换组件"><img src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/lazyLoading/9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="通过component标签加上is属性动态切换组件"/></a><div class="content"><a class="title" href="/2021/01/09/0f2ed4f13cc4/" title="通过component标签加上is属性动态切换组件">通过component标签加上is属性动态切换组件</a><time datetime="2021-01-09T03:25:00.000Z" title="发表于 2021-01-09 11:25:00">2021-01-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/15/6b0c33f3efc7/" title="vue 跨域配置webpack"><img src= "https://images.lzlj.top/lazyLoading/loading.gif" data-lazy-src="https://images.lzlj.top/lazyLoading/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue 跨域配置webpack"/></a><div class="content"><a class="title" href="/2020/11/15/6b0c33f3efc7/" title="vue 跨域配置webpack">vue 跨域配置webpack</a><time datetime="2020-11-15T10:32:00.000Z" title="发表于 2020-11-15 18:32:00">2020-11-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2023 By 拾光丶</div><div class="footer_custom_text"><a style="margin-inline:5px" target="_blank" href="https://beian.miit.gov.cn"><span>鲁ICP备19063627号</span></a><div style="position:fixed;bottom:50px;left:30px;"><div id="sakana-widget"></div></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'g2FzpeGRm4ujlRZxSijELrQ3-9Nh9j0Va',
+      appKey: 'zt7gwQX4NoYrJk2xJZ9MH5Jr',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, {"placeholder":"快来评论吧","recordIP":true}))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://lzlj.top/2020/11/10/dd956b0d095b/'
+    this.page.identifier = '/2020/11/10/dd956b0d095b/'
+    this.page.title = 'CSS 速查笔记'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Valine' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script><script async onload="initSakanaWidget()" src="./js/sakana.min.js"></script><script src="/js/extend.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="❤富强❤,❤民主❤,❤文明❤,❤和谐❤,❤自由❤,❤平等❤,❤公正❤,❤法治❤,❤爱国❤,❤敬业❤,❤诚信❤,❤友善❤" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
